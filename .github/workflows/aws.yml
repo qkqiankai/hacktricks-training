@@ -2,9 +2,8 @@ name: 'test AWS Access'
  
 # The workflow should only trigger on pull requests to the main branch
 on:
-  pull_request:
-    branches:
-      - main
+  push:
+    branches: [ "main" ]
  
 # Required to get the ID Token that will be used for OIDC
 permissions:
